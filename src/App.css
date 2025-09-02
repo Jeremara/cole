@@ -1,0 +1,52 @@
+/* Custom styles beyond Tailwind */
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Animation for scroll button */
+.scroll-btn:hover svg {
+    animation: bounce 1s infinite;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(5px);
+    }
+}
+
+/* Highlighted download box */
+.download-highlight {
+    border-color: #4F46E5;
+    box-shadow: 0 0 0 2px rgba(79, 70, 229, 0.2);
+}
+
+/* Download suggestion popup animation */
+#download-suggestion.show {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+/* Custom gradient backgrounds */
+.bg-gradient-custom {
+    background-image: linear-gradient(135deg, #4F46E5 0%, #10B981 100%);
+}
+
+/* Responsive adjustments */
+@media (max-width: 640px) {
+    .container {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
+
+/* Accessibility focus styles */
+a:focus, button:focus {
+    outline: 2px solid #4F46E5;
+    outline-offset: 2px;
+}
+
